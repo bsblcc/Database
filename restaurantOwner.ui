@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>form_restaurantOwner</class>
+ <widget class="QWidget" name="form_restaurantOwner">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>425</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_restaurant">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Your restaurant</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_restaurant">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>50</y>
+     <width>751</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>6</number>
+   </property>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+  </widget>
+  <widget class="QPushButton" name="pushButton_enterRestaurant">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>140</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enter</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_add_restaurant">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>370</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Restaurant</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_indents">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>370</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>All Indents</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_delete_restaurant">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>230</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_enterRestaurant</sender>
+   <signal>clicked()</signal>
+   <receiver>form_restaurantOwner</receiver>
+   <slot>enter()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>850</x>
+     <y>144</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>910</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_add_restaurant</sender>
+   <signal>clicked()</signal>
+   <receiver>form_restaurantOwner</receiver>
+   <slot>add_restaurant()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>421</x>
+     <y>380</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>771</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_delete_restaurant</sender>
+   <signal>clicked()</signal>
+   <receiver>form_restaurantOwner</receiver>
+   <slot>delete_restaurant()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>968</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>962</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_indents</sender>
+   <signal>clicked()</signal>
+   <receiver>form_restaurantOwner</receiver>
+   <slot>allIndents()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>680</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>580</x>
+     <y>404</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>enter()</slot>
+  <slot>add_restaurant()</slot>
+  <slot>delete_restaurant()</slot>
+  <slot>allIndents()</slot>
+ </slots>
+</ui>

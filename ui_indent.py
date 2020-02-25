@@ -1,0 +1,95 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'indent.ui'
+#
+# Created by: PyQt5 UI code generator 5.8.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_form_order(object):
+    def setupUi(self, form_order):
+        form_order.setObjectName("form_order")
+        form_order.resize(1014, 843)
+        self.tableWidget_restaurant = QtWidgets.QTableWidget(form_order)
+        self.tableWidget_restaurant.setGeometry(QtCore.QRect(60, 30, 661, 541))
+        self.tableWidget_restaurant.setObjectName("tableWidget_restaurant")
+        self.tableWidget_restaurant.setColumnCount(5)
+        self.tableWidget_restaurant.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_restaurant.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_restaurant.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_restaurant.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_restaurant.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_restaurant.setHorizontalHeaderItem(4, item)
+        self.label_cuisines = QtWidgets.QLabel(form_order)
+        self.label_cuisines.setGeometry(QtCore.QRect(730, 210, 55, 16))
+        self.label_cuisines.setObjectName("label_cuisines")
+        self.radioButton_address = QtWidgets.QRadioButton(form_order)
+        self.radioButton_address.setGeometry(QtCore.QRect(910, 90, 95, 20))
+        self.radioButton_address.setObjectName("radioButton_address")
+        self.radioButton_cuisines = QtWidgets.QRadioButton(form_order)
+        self.radioButton_cuisines.setGeometry(QtCore.QRect(910, 210, 95, 20))
+        self.radioButton_cuisines.setObjectName("radioButton_cuisines")
+        self.radioButton_budget = QtWidgets.QRadioButton(form_order)
+        self.radioButton_budget.setGeometry(QtCore.QRect(910, 340, 95, 20))
+        self.radioButton_budget.setObjectName("radioButton_budget")
+        self.comboBox_address = QtWidgets.QComboBox(form_order)
+        self.comboBox_address.setGeometry(QtCore.QRect(820, 90, 73, 22))
+        self.comboBox_address.setObjectName("comboBox_address")
+        self.label_2 = QtWidgets.QLabel(form_order)
+        self.label_2.setGeometry(QtCore.QRect(740, 90, 55, 16))
+        self.label_2.setObjectName("label_2")
+        self.label_budget = QtWidgets.QLabel(form_order)
+        self.label_budget.setGeometry(QtCore.QRect(730, 340, 55, 16))
+        self.label_budget.setObjectName("label_budget")
+        self.comboBox_cuisines = QtWidgets.QComboBox(form_order)
+        self.comboBox_cuisines.setGeometry(QtCore.QRect(820, 210, 73, 22))
+        self.comboBox_cuisines.setObjectName("comboBox_cuisines")
+        self.pushButton_filter = QtWidgets.QPushButton(form_order)
+        self.pushButton_filter.setGeometry(QtCore.QRect(800, 480, 93, 28))
+        self.pushButton_filter.setObjectName("pushButton_filter")
+        self.pushButton_order = QtWidgets.QPushButton(form_order)
+        self.pushButton_order.setGeometry(QtCore.QRect(310, 610, 93, 28))
+        self.pushButton_order.setObjectName("pushButton_order")
+        self.spinBox_budget_min = QtWidgets.QSpinBox(form_order)
+        self.spinBox_budget_min.setGeometry(QtCore.QRect(800, 340, 42, 22))
+        self.spinBox_budget_min.setObjectName("spinBox_budget_min")
+        self.spinBox_budget_max = QtWidgets.QSpinBox(form_order)
+        self.spinBox_budget_max.setGeometry(QtCore.QRect(860, 340, 42, 22))
+        self.spinBox_budget_max.setObjectName("spinBox_budget_max")
+
+        self.retranslateUi(form_order)
+        self.pushButton_order.clicked.connect(form_order.order)
+        self.pushButton_filter.clicked.connect(form_order.filter)
+
+        QtCore.QMetaObject.connectSlotsByName(form_order)
+
+    def retranslateUi(self, form_order):
+        _translate = QtCore.QCoreApplication.translate
+        form_order.setWindowTitle(_translate("form_order", "Form"))
+        self.tableWidget_restaurant.setSortingEnabled(True)
+        item = self.tableWidget_restaurant.horizontalHeaderItem(0)
+        item.setText(_translate("form_order", "Name"))
+        item = self.tableWidget_restaurant.horizontalHeaderItem(1)
+        item.setText(_translate("form_order", "Address"))
+        item = self.tableWidget_restaurant.horizontalHeaderItem(2)
+        item.setText(_translate("form_order", "Cuisines"))
+        item = self.tableWidget_restaurant.horizontalHeaderItem(3)
+        item.setText(_translate("form_order", "Budget"))
+        item = self.tableWidget_restaurant.horizontalHeaderItem(4)
+        item.setText(_translate("form_order", "Sales"))
+        self.label_cuisines.setText(_translate("form_order", "Cuisines"))
+        self.radioButton_address.setText(_translate("form_order", "Enable"))
+        self.radioButton_cuisines.setText(_translate("form_order", "Enable"))
+        self.radioButton_budget.setText(_translate("form_order", "Enable"))
+        self.label_2.setText(_translate("form_order", "Address"))
+        self.label_budget.setText(_translate("form_order", "Cuisines"))
+        self.pushButton_filter.setText(_translate("form_order", "Filter"))
+        self.pushButton_order.setText(_translate("form_order", "Order"))
+

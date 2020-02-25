@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>form_add_restaurant</class>
+ <widget class="QWidget" name="form_add_restaurant">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_name">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>60</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_address">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>120</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Address</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_cuisines">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>250</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cuisines</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_startTime">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>350</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start time</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_endTime">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>450</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>End time</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit_name">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>50</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit_address">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>120</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="timeEdit_startTime">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>340</y>
+     <width>118</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="timeEdit_endTime">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>450</y>
+     <width>118</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_submit">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>520</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_cuisines">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>240</y>
+     <width>73</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Fast Food</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Chinese</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>French</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mexico</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Italian</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Japanese</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_submit</sender>
+   <signal>clicked()</signal>
+   <receiver>form_add_restaurant</receiver>
+   <slot>add_restaurant()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>526</x>
+     <y>527</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>556</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>add_restaurant()</slot>
+ </slots>
+</ui>

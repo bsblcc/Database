@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>form_order</class>
+ <widget class="QWidget" name="form_order">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1014</width>
+    <height>843</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget_restaurant">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>30</y>
+     <width>661</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Address</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Cuisines</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Budget</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Sales</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>RID</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_cuisines">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>210</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cuisines</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_address">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>90</y>
+     <width>95</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enable</string>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_cuisines">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>210</y>
+     <width>95</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enable</string>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_budget">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>340</y>
+     <width>95</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enable</string>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_address">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>90</y>
+     <width>73</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>90</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Address</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_budget">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>340</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Budget</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_cuisines">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>210</y>
+     <width>73</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_filter">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>480</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Filter</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_order">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>610</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Order</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_budget_min">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>340</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>9999</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_budget_max">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>340</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>9999</number>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_order</sender>
+   <signal>clicked()</signal>
+   <receiver>form_order</receiver>
+   <slot>order()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>628</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>684</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_filter</sender>
+   <signal>clicked()</signal>
+   <receiver>form_order</receiver>
+   <slot>filter()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>830</x>
+     <y>504</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>810</x>
+     <y>614</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>order()</slot>
+  <slot>filter()</slot>
+ </slots>
+</ui>

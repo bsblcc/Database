@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>form_restaurant</class>
+ <widget class="QWidget" name="form_restaurant">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>789</width>
+    <height>1032</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_indent">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>430</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Indent</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_dishes">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>970</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Dishes</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_indent">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>511</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="columnCount">
+    <number>4</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Account</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Address</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Time</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Cost</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_dishes">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>540</y>
+     <width>511</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="columnCount">
+    <number>4</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Kind</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Price</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Sales</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="pushButton_add_dishes">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>600</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Dishes</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_edit_dishes">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>690</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit Dishes</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_delelte_dishes">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>770</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete Dishes</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_about_dishes">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>870</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>About Dishes</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_about_indent">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>170</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>About Indent</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_about_indent</sender>
+   <signal>clicked()</signal>
+   <receiver>form_restaurant</receiver>
+   <slot>about_indent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>669</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>664</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_add_dishes</sender>
+   <signal>clicked()</signal>
+   <receiver>form_restaurant</receiver>
+   <slot>add_dishes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>671</x>
+     <y>613</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>693</x>
+     <y>545</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_edit_dishes</sender>
+   <signal>clicked()</signal>
+   <receiver>form_restaurant</receiver>
+   <slot>edit_dishes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>677</x>
+     <y>696</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>765</x>
+     <y>697</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_delelte_dishes</sender>
+   <signal>clicked()</signal>
+   <receiver>form_restaurant</receiver>
+   <slot>delete_dishes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>683</x>
+     <y>785</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>781</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_about_dishes</sender>
+   <signal>clicked()</signal>
+   <receiver>form_restaurant</receiver>
+   <slot>about_dishes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>695</x>
+     <y>885</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>743</x>
+     <y>849</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>about_indent()</slot>
+  <slot>add_dishes()</slot>
+  <slot>edit_dishes()</slot>
+  <slot>delete_dishes()</slot>
+  <slot>about_dishes()</slot>
+ </slots>
+</ui>

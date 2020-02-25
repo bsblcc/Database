@@ -1,0 +1,1 @@
+python -m pwiz -e mysql -H localhost -u root -p 3306 -P lc741015 mydb > db_peewee.py

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>form_all_indent</class>
+ <widget class="QWidget" name="form_all_indent">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>642</width>
+    <height>786</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget_currentIndent">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>601</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+   <column>
+    <property name="text">
+     <string>Restaurant</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Account</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Address</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Time</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>IID</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_pastIndent">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>390</y>
+     <width>601</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+   <column>
+    <property name="text">
+     <string>Restaurant</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Account</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Address</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Time</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>IID</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>320</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Current</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>710</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Past</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>tableWidget_currentIndent</sender>
+   <signal>cellDoubleClicked(int,int)</signal>
+   <receiver>form_all_indent</receiver>
+   <slot>showCurrentIndent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>352</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>457</x>
+     <y>229</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget_pastIndent</sender>
+   <signal>cellDoubleClicked(int,int)</signal>
+   <receiver>form_all_indent</receiver>
+   <slot>showPastIndent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>325</x>
+     <y>540</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>showPastIndent()</slot>
+  <slot>showCurrentIndent()</slot>
+ </slots>
+</ui>

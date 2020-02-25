@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>form_customer</class>
+ <widget class="QWidget" name="form_customer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1278</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_currentIndent">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Current Indent</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_currentIndent">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>20</y>
+     <width>611</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>200</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Restaurant Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Time</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Address</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>IID</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_pastIndent">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>570</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Past Indent</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_edit_phoneNumber">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>40</y>
+     <width>141</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit Phone Number</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_order">
+   <property name="geometry">
+    <rect>
+     <x>1130</x>
+     <y>820</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Order</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_edit_password">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>100</y>
+     <width>141</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit Password</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_finish_indent">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>150</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Finish Indent</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_address">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>490</y>
+     <width>201</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="columnCount">
+    <number>1</number>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>200</number>
+   </attribute>
+   <column/>
+  </widget>
+  <widget class="QPushButton" name="pushButton_add_address">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>520</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_delete_address">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>580</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_address">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>840</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Address</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_pastIndent">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>390</y>
+     <width>611</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>200</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Restaurant Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Time</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Address</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>IID</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel_indent">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>220</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_edit_phoneNumber</sender>
+   <signal>clicked()</signal>
+   <receiver>form_customer</receiver>
+   <slot>show_change_phoneNumber()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>64</x>
+     <y>535</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>78</x>
+     <y>471</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_order</sender>
+   <signal>clicked()</signal>
+   <receiver>form_customer</receiver>
+   <slot>show_order()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>338</x>
+     <y>565</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>302</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_edit_password</sender>
+   <signal>clicked()</signal>
+   <receiver>form_customer</receiver>
+   <slot>show_change_password()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>599</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>675</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_finish_indent</sender>
+   <signal>clicked()</signal>
+   <receiver>form_customer</receiver>
+   <slot>finish_indent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>952</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>942</x>
+     <y>209</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_add_address</sender>
+   <signal>clicked()</signal>
+   <receiver>form_customer</receiver>
+   <slot>add_address()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>913</x>
+     <y>472</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>984</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_delete_address</sender>
+   <signal>clicked()</signal>
+   <receiver>form_customer</receiver>
+   <slot>delete_address()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>958</x>
+     <y>576</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>954</x>
+     <y>642</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget_currentIndent</sender>
+   <signal>cellDoubleClicked(int,int)</signal>
+   <receiver>form_customer</receiver>
+   <slot>show_currentIndent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget_pastIndent</sender>
+   <signal>cellDoubleClicked(int,int)</signal>
+   <receiver>form_customer</receiver>
+   <slot>show_pastIndent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>467</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>655</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_cancel_indent</sender>
+   <signal>clicked()</signal>
+   <receiver>form_customer</receiver>
+   <slot>cancel_indent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>823</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>983</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>show_change_phoneNumber()</slot>
+  <slot>show_order()</slot>
+  <slot>show_change_password()</slot>
+  <slot>finish_indent()</slot>
+  <slot>show_address()</slot>
+  <slot>add_address()</slot>
+  <slot>delete_address()</slot>
+  <slot>show_currentIndent()</slot>
+  <slot>show_pastIndent()</slot>
+  <slot>cancel_indent()</slot>
+ </slots>
+</ui>
